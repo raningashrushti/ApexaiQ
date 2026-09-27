@@ -1,1 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Training Documentation</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: #0f172a;
+            color: white;
+            padding: 50px 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .header h1 {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .header p {
+            color: #94a3b8;
+            font-size: 18px;
+        }
+
+        .documents {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 20px;
+            padding: 35px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: #38bdf8;
+            box-shadow: 0 10px 30px rgba(56, 189, 248, 0.2);
+        }
+
+        .icon {
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+
+        .card h2 {
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #94a3b8;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 22px;
+            background: #38bdf8;
+            color: #0f172a;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #7dd3fc;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            color: #64748b;
+        }
+
+        @media (max-width: 700px) {
+
+            .documents {
+                grid-template-columns: 1fr;
+            }
+
+            .header h1 {
+                font-size: 32px;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+
+            <h1>Training Documentation</h1>
+
+            <p>
+                Explore the training documentation for Linux, DevOps,
+                Python and JavaScript.
+            </p>
+
+        </div>
+
+
+        <div class="documents">
+
+
+            <!-- Linux -->
+
+            <div class="card">
+
+                <div class="icon">🐧</div>
+
+                <h2>Linux</h2>
+
+                <p>
+                    Training documentation covering Linux concepts,
+                    commands and practical exercises.
+                </p>
+
+                <a
+                    href="Linux_Training_Documentation.pdf"
+                    target="_blank"
+                    class="button">
+                    View PDF
+                </a>
+
+            </div>
+
+
+            <!-- DevOps -->
+
+            <div class="card">
+
+                <div class="icon">⚙️</div>
+
+                <h2>DevOps</h2>
+
+                <p>
+                    Training documentation covering DevOps concepts,
+                    tools and development practices.
+                </p>
+
+                <a
+                    href="DevOps_Training_Documentation.pdf"
+                    target="_blank"
+                    class="button">
+                    View PDF
+                </a>
+
+            </div>
+
+
+            <!-- Python -->
+
+            <div class="card">
+
+                <div class="icon">🐍</div>
+
+                <h2>Python</h2>
+
+                <p>
+                    Training documentation covering Python programming,
+                    libraries and software engineering practices.
+                </p>
+
+                <a
+                    href="Python_Training_Documentation.pdf"
+                    target="_blank"
+                    class="button">
+                    View PDF
+                </a>
+
+            </div>
+
+
+            <!-- JavaScript -->
+
+            <div class="card">
+
+                <div class="icon">⚡</div>
+
+                <h2>JavaScript</h2>
+
+                <p>
+                    Training documentation covering JavaScript,
+                    functions, DOM, events and asynchronous programming.
+                </p>
+
+                <a
+                    href="JavaScript_Training_Documentation.pdf"
+                    target="_blank"
+                    class="button">
+                    View PDF
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <footer>
+
+            Training Documentation
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
